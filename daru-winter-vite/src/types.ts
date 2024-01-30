@@ -3,4 +3,5 @@ export interface TodoTask {
     userId: number;
     title: string;
     completed: boolean;
+    url: string;
 }
