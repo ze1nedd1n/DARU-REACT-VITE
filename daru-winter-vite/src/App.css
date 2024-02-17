@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+ol {
+  display: flex;
+  flex-direction: column;
+}
+li {
+  display: flex;
+  flex-direction: column;
+}
