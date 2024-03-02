@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgb(109,110,133);
+    }
+}

@@ -3,6 +3,8 @@ import './Auth.css';
 import { UserName } from './userName/UserName';
 import { UserData } from '../../types';
 import { Password } from './password/Password';
+import { FirstName } from './firstName/FirstName';
+import { LastName } from './lastName/LastName';
 
 const UserDataDefaults: UserData = {
     username: '',
@@ -50,6 +52,25 @@ export const Auth = () => {
                     onNextClick={handleNextClick}
                 />
             )}
+            {currentStep == 2 &&(
+                <FirstName 
+                    currentFirstName={userData.firstname} 
+                    onFirstNameChange={(v) => 
+                        handleUserDataChange('firstname', v)
+                    }
+                    onNextClick={handleNextClick}
+                />
+            )}
+            {currentStep == 3 &&(
+                <LastName 
+                    currentLastName={userData.lastname} 
+                    onLastNameChange={(v) => 
+                        handleUserDataChange('lastname', v)
+                    }
+                    onNextClick={handleNextClick}
+                />
+            )}
+
         </div>
     );
 };
