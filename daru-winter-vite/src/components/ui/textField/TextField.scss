@@ -1,0 +1,15 @@
+.TextField {
+    input {
+        padding: 4px 8px;
+        font-size: 16px;
+        line-height: 18px;
+        border-radius: 4px;
+        border: 1px solid rgb(224, 227, 234);
+        outline: none;
+    }
+    label {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 4px;
+    }
+}
